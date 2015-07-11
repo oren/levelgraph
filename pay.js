@@ -1,7 +1,6 @@
 var level = require("level-browserify");
 var levelgraph = require("levelgraph");
-
-var db = levelgraph(level("payment"));
+var db = levelgraph(level("pay"));
 
 var payments = [
   { subject: "armando-112", predicate: "pay-july", object: "350" },
