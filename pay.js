@@ -1,7 +1,6 @@
 var level = require("level-browserify");
 var levelgraph = require("levelgraph");
 
-// just use this in the browser with the provided bundle
 var db = levelgraph(level("payment"));
 
 var payments = [

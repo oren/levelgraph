@@ -1,6 +1,5 @@
 var level = require("level-browserify");
 var levelgraph = require("levelgraph");
-
 var db = levelgraph(level("payment-PA"));
 
 var distances = [
@@ -16,6 +15,7 @@ db.put(distances, function(err) {
 });
 
 var stream = db.getStream({subject: "armando-112"});
+
 stream.on("data", function(data) {
     console.log('data', data);
 });
